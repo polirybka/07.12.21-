@@ -1,0 +1,124 @@
+body{
+  background: #C2CDE8;
+}
+*{
+  box-sizing: border-box;
+}
+.container{
+  background:  #fff;
+  height: 100px;
+  width: 400px;
+  overflow: hidden;
+  padding: 30px 0;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+.p{
+  font-size:35px;
+}
+.row{
+  height: 100px;
+  width: 2000px;
+  text-shadow: 0 0 2px 2px rgba(255, 0, 0, 1);
+  vertical-align: middle;     
+    padding: absolute;
+    top: 7px;
+    color: #C2CDE8;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: lin 14s linear infinite;z
+}
+@keyframes lin {
+  from{text-indent: 13%}
+  to{text-indent: -40%}
+}
+.btn2{
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 75px;
+  width: 400px;
+  background-color: black;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-weight: bold;
+  transition: all .2s ease-out;
+}
+.btn2.hover{
+  background: #443B84;
+  transition: all .5s ease-out;
+}
+.btn2:hover ~ .container.row{
+  animation-play-state: paused;
+  transition: all. 2s cubic-bezier(0, 0, 0.31, 0.82);
+}
+.pbtn2 {
+font-size: 30px;
+padding: 20px 0;
+border-radius: 5px;
+}
+
+
+}
+.clock{
+  width: 300px;
+  height: 100px;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-color: #DFF5E2 1px;;
+}
+.cl-el{
+  width: 40px;
+  height: 100%;
+  display: inline-block;
+  background: #E0DEFF;
+  color: black;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+.cl-ed{
+  height: 100%;
+  display: inline-block;
+  color: white;
+  vertical-align: top;
+  font-size: 50px;
+  padding: 17px 0;
+  font-weight: bold;
+
+}
+.mn{
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
+  position: absolute;
+  top: 0;
+
+}
+.sec-e{
+  animation: sec 10s linear infinite;
+}
+.sec-d{
+  animation: sec 60s steps(6) infinite;
+}
+.min-e{
+  animation: dec 600s steps(10) infinite;
+}
+.min-d{
+ animation: dec 3600s steps(6) infinite;
+}
+
+@keyframes sec {
+  0%{ top: 0;}
+  100%{ top: -1000%;}
+}
+@keyframes dec {
+  0%{ top: 0;}
+  100%{ top: -600%;}
+}
